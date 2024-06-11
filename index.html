@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #1db954, #191414);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,14 +18,20 @@
             background: #fff;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
             max-width: 500px;
             width: 100%;
             text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .playlist-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 30px rgba(0,0,0,0.5);
         }
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
+            color: #333;
         }
     </style>
 </head>

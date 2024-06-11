@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1db954, #191414);
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,12 +33,28 @@
             margin-bottom: 20px;
             color: #333;
         }
+        .discord-logo {
+            margin-top: 20px;
+        }
+        .discord-logo img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+        .discord-logo img:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
     <div class="playlist-card">
         <h1>Moja Playlista na Spotify</h1>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1dsDjOvyTdDEMjhph7P1Oi?utm_source=generator" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div class="discord-logo">
+            <a href="https://discordapp.com/users/709721100015370250" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg" alt="Discord">
+            </a>
+        </div>
     </div>
 </body>
 </html>

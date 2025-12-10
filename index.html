@@ -153,12 +153,40 @@
             border-radius: 6px;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
         }
         .btn-download:hover {
             background-color: #1a3c5e;
             transform: translateY(-2px);
             color: white;
             padding-left: 40px;
+        }
+
+        /* Sekcja Sumy Kontrolnej */
+        .checksum-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .checksum-label {
+            font-size: 0.85em;
+            text-transform: uppercase;
+            color: #4a5568;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .checksum-code {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.85em;
+            background-color: #fff;
+            border: 1px solid #bee3f8;
+            color: #2c5282;
+            padding: 8px 12px;
+            border-radius: 4px;
+            word-break: break-all;
+            user-select: all; /* Ułatwia zaznaczanie */
+            display: inline-block;
         }
 
         /* Przycisk powrotu do góry */
@@ -316,10 +344,15 @@
         <div class="download-info">
             <strong>Wersja:</strong> 1.0 (Stable) &bull; <strong>System:</strong> Windows 10/11 &bull; <strong>Typ:</strong> Portable
         </div>
-        <!-- Link kierujący do Release v1.0 w Twoim repozytorium -->
+        
         <a href="https://github.com/skubaj/noxis.site/releases/download/v1.0/SkanerZSL.exe" class="btn-download">
             &#11015; Pobierz Skaner Sieciowy ZSL
         </a>
+
+        <div class="checksum-container">
+            <span class="checksum-label">Suma kontrolna SHA256 (Checksum):</span>
+            <code class="checksum-code">213c231e247b9be70b160b4c8226645c3fedfd0aa456919c4eff44279b488c8e</code>
+        </div>
     </div>
 
     <div class="authors-section">
